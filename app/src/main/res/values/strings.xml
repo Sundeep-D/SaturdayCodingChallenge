@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LCO loginScreenChallenge</string>
+    <string name="app_head">LearnCodeOnline</string>
+    <string name="startlearning">Start Learning</string>
+</resources>

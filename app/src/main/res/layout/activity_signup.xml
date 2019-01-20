@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/signup">
+
+
+
+    <LinearLayout
+        android:id="@+id/name_mail_ED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:orientation="vertical"
+
+        android:layout_marginTop="230dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:background="#fff"
+            android:textSize="25sp"
+            android:hint="Name"
+            android:layout_height="40dp" />
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="200dp"
+            android:layout_marginTop="40dp"
+            android:background="#fff"
+            android:hint="Mail"
+            android:textSize="25sp"
+            android:layout_height="40dp" />
+
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_mail_ED"
+        android:layout_marginTop="80dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_mail_ED"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bootstrapfour">
+
+                <CheckBox
+                    android:layout_width="50dp"
+                    android:shadowColor="#fff"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@drawable/javascript">
+
+                <CheckBox
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@drawable/flutter">
+
+                <CheckBox
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bootstrap">
+
+                <CheckBox
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.dd.morphingbutton.MorphingButton
+        android:layout_below="@id/horscroll"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/accept_and_continue"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="   J O I N   "
+        android:textSize="30sp"
+        android:background="#141CBF"
+        android:textColor="#fff"
+        android:foregroundTint="#141CBF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="accept_and_continue"
+        />
+
+</RelativeLayout>

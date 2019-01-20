@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+   android:background="@drawable/loginskel"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    >
+
+    <ImageView
+        android:id="@+id/lco_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+
+        android:src="@drawable/lcod"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_toRightOf="@id/lco_logo"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/learncodeonlinetv"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/star"/>
+
+    <TextView
+        android:id="@+id/learncodeonlinetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_head"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="19dp"
+
+        android:textColor="#fff"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/startlearningtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/startlearning"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="19dp"
+        android:layout_below="@id/lco_logo"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:textSize="25sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/login_LL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lco_logo"
+        android:layout_marginTop="175dp"
+        android:paddingLeft="0dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/usernameED"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/usrnme"
+            android:hint="Username"
+            android:paddingLeft="50dp" />
+
+        <EditText
+            android:id="@+id/passwordED"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:inputType="numberPassword"
+            android:background="@drawable/paswrd"
+            android:hint="Password"
+            android:paddingLeft="50dp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/connect"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="18dp"
+        android:onClick="signup"/>
+
+
+
+
+
+</RelativeLayout>
